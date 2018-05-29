@@ -28,8 +28,13 @@ public class MainActivity extends AppCompatActivity {
     private void showDialog() {
 
 
+        // DataEntryDialog object
         DataEntryDialog dataEntryDialog = new DataEntryDialog();
+
+        // Prohibiting dialog to disappear when thouch outside the dialog
         dataEntryDialog.setCancelable(false);
+
+        // Showing the dialog using show method
         dataEntryDialog.show(getSupportFragmentManager(), "DIALOG_FRAGMENT");
 
     }

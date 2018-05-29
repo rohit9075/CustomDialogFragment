@@ -17,8 +17,10 @@ public class DataEntryDialog  extends DialogFragment{
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
+        // inflating the dialog xml layout 1. layout id , 2. view grout 3. we are going to attach with root or not
         View rootView = inflater.inflate(R.layout.data_entry_dialog, container,false);
 
+        // handling the btnok event
         Button btnOk = rootView.findViewById(R.id.btnOk);
 
         btnOk.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +31,7 @@ public class DataEntryDialog  extends DialogFragment{
         });
 
 
+        // handling the btnCancel event
         Button btnCancel = rootView.findViewById(R.id.btnCancel);
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
